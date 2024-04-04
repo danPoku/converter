@@ -11,7 +11,7 @@ async function uploadFile(file) {
     const formData = new FormData();
     formData.append('file', file);
 
-    const response = await fetch('/upload', {
+    const response = await fetch('https://tf-statement-converter.dan-gyinaye.workers.dev/upload', {
         method: 'POST',
         body: formData
     });
