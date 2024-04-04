@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload PDF</title>
+    <style>
+      #drop-area {
+        border: 2px dashed #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        margin: 20px auto;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Upload your PDF</h1>
+    <div id="drop-area">
+      <p>Drag and drop your PDF here or click to browse</p>
+      <button id="customFileButton">Select your PDF</button>
+      <input type="file" id="fileInput" accept=".pdf" style="display: none" />
+    </div>
+
+    <p id="message"></p>
+
+    <script src="upload.js"></script>
+  </body>
+</html>
