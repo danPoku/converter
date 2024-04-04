@@ -13,7 +13,8 @@ async function uploadFile(file) {
 
     const response = await fetch('https://tf-statement-converter.dan-gyinaye.workers.dev/upload', {
         method: 'POST',
-        body: formData
+        body: formData,
+        mode: 'no-cors' // Set request mode to 'no-cors'
     });
 
     const data = await response.json();
